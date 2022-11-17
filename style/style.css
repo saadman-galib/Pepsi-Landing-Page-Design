@@ -13,7 +13,8 @@ html {
 body {
     background-color: #0260bf;
     font-family: Poppins, sans-serif;
-    /* overflow: hidden; */
+    overflow: hidden;
+    transition: 1.2s;
 }
 
 .navbar {

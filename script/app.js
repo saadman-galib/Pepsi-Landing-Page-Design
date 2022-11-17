@@ -1,45 +1,39 @@
-var body = document.getElementsByTagName("body");
+var body = document.querySelector("body");
 var heroImg = document.querySelector(".hero-right-part img");
 var footerImg = document.querySelectorAll(".footer-img-container img");
 
-// for (var i = 0; i < footerImg.length; i++) {
-//     console.log(footerImg[i].src)
-//     footerImg[i].addEventListener("click", () => {
-//         // i = Number(i);
-//         // changeImg(i);
-//         console.log(footerImg[i].src)
-//     });
-// }
 footerImg.forEach((e) => {
-    // console.log(e.src)
     e.addEventListener("click", (i) => {
-        console.log(footerImg.indexOf(e))
-        // console.log(footerImg.index(this))
-        console.log(i)
-    })
-})
-// footerImg[0].addEventListener("click", () => {
-//     // i = Number(i);
-//     heroImg.src = "./images/pepsi002.png";
-//     // changeImg(i);
-// });              
+        var indexImg = getIndex(e);
+        changeImg(indexImg);
+    });
+});
 
-
-function getIndex() {
-    
+function getIndex(j) {
+    for (var k = 0; k < footerImg.length; k++) {
+        var indexNum = footerImg[k] == j ? k : null;
+        if (indexNum) {
+            break;
+        }
+    }
+    k = k == 3 ? 0 : k;
+    return k;
 }
 
 function changeImg(num) {
-    console.log(num)
+    console.log(num);
     switch (num) {
         case 0:
             heroImg.src = "./images/pepsi001.png";
+            body.style.backgroundColor = "#0260BF";
             break;
         case 1:
             heroImg.src = "./images/pepsi002.png";
+            body.style.backgroundColor = "#E9422F";
             break;
         case 2:
             heroImg.src = "./images/pepsi003.png";
+            body.style.backgroundColor = "#1E1E1E";
             break;
         default:
             console.log("img not found");
