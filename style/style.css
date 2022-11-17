@@ -13,6 +13,7 @@ html {
 body {
     background-color: #0260bf;
     font-family: Poppins, sans-serif;
+    overflow: hidden;
 }
 
 .navbar {
@@ -43,6 +44,15 @@ body {
     color: #fff;
     font-weight: 500;
     margin-left: 25rem;
+    background: none;
+    transition: 0.7s ease;
+    border-radius: 30px;
+    padding: 3px 15px;
+}
+
+.navbar-right-part ul li a:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .hero-section {
@@ -53,6 +63,7 @@ body {
     color: #fff;
     justify-content: center;
     align-items: center;
+    margin-top: 45rem;
 }
 
 .hero-left-part,
@@ -63,6 +74,7 @@ body {
 .hero-right-part img {
     float: right;
     margin-right: 10%;
+    height: 600px;
 }
 
 .hero-heading h2 {
@@ -97,4 +109,25 @@ body {
 
 .main-btn:hover {
     opacity: 0.8;
+}
+
+.footer {
+    width: 100vw;
+}
+
+.footer-img-container {
+    width: max-content;
+    margin: 15rem auto;
+}
+
+.footer img {
+    width: 55px;
+    height: auto;
+    margin: auto 25rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer img:hover {
+    transform: translateY(-25rem);
 }
