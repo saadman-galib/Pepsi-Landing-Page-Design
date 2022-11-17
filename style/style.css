@@ -13,9 +13,7 @@ html {
 body {
     background-color: #0260bf;
     font-family: Poppins, sans-serif;
-    /* overflow: hidden; */
     transition: 0.5s;
-    position: relative;
 }
 
 .navbar {
@@ -25,6 +23,7 @@ body {
     padding: 30rem 0;
     width: 80%;
     margin: auto;
+    position: relative;
 }
 
 .navbar-right-part {
@@ -135,7 +134,7 @@ body {
 
 .social-icons {
     /* position: absolute; */
-    position: fixed ;
+    position: fixed;
     /* top: 50%; */
     /* height: 100vh; */
     /* margin: auto; */
@@ -161,7 +160,6 @@ body {
     align-items: center;
     border-radius: 8px;
     transition-property: color, background, background-clip;
-    
 }
 .social-icons i:nth-child(3) {
     position: relative;
@@ -205,4 +203,114 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.nav-icon-container {
+    font-size: 32rem;
+    color: #fff;
+    display: none !important;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .hero-heading h2 {
+        font-size: 45rem;
+    }
+
+    .hero-heading h1 {
+        font-size: 100rem;
+    }
+
+    .hero-right-part img {
+        height: 350px;
+        width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-right-part ul li a {
+        margin-left: 15rem;
+    }
+
+    .navbar-right-part {
+        position: absolute;
+        top: 150px;
+        left: -165%;
+        width: 100%;
+        transition: 0.5s;
+        z-index: 5;
+    }
+    .navbar-right-part ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-right-part ul li {
+        width: 125%;
+        background-color: #0260bf;
+        display: flex;
+    }
+
+    .navbar-right-part ul li a {
+        margin: 8rem auto;
+    }
+
+    .navbar-right-part ul li:nth-child(5) {
+        padding-bottom: 25rem;
+    }
+
+    .nav-icon-container {
+        display: block !important;
+        margin-left: auto;
+    }
+
+    .hero-heading h2 {
+        font-size: 35rem;
+    }
+
+    .hero-heading h1 {
+        font-size: 80rem;
+    }
+
+    .hero-right-part img {
+        height: 350px;
+        width: auto;
+    }
+
+    .hero-text p {
+        margin: 25rem 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar-left-part img {
+        width: 65px;
+        height: auto;
+    }
+
+    .navbar-right-part {
+        top: 120px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        wid
+        th: 90%;
+    }
+    .hero-left-part,
+    .hero-right-part {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-right-part img {
+        float: none;
+        margin: 35rem auto;
+    }
+
+    .social-icons i{
+        background-color: #0260bf;
+
+    }
 }

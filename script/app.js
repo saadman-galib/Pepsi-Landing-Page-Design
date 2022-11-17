@@ -1,6 +1,8 @@
 var body = document.querySelector("body");
 var heroImg = document.querySelector(".hero-right-part img");
 var footerImg = document.querySelectorAll(".footer-img-container img");
+var navIcon = document.querySelector(".nav-icon");
+var navbarItems = document.querySelector(".navbar-right-part");
 
 footerImg.forEach((e) => {
     e.addEventListener("click", (i) => {
@@ -38,3 +40,15 @@ function changeImg(num) {
             console.log("img not found");
     }
 }
+
+navIcon.addEventListener("click", () => {
+    if (navIcon.classList[2] == "fa-bars") {
+        navIcon.classList.remove("fa-bars");
+        navIcon.classList.add("fa-xmark");
+        navbarItems.style.left = "0";
+    } else {
+        navIcon.classList.remove("fa-xmark");
+        navIcon.classList.add("fa-bars");
+        navbarItems.style.left = "-165%";
+    }
+});
