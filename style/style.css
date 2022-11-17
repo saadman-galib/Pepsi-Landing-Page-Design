@@ -13,7 +13,7 @@ html {
 body {
     background-color: #0260bf;
     font-family: Poppins, sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .navbar {
@@ -112,7 +112,7 @@ body {
 }
 
 .footer {
-    width: 100vw;
+    width: 100%;
 }
 
 .footer-img-container {
