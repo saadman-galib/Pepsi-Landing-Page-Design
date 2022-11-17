@@ -45,3 +45,56 @@ body {
     margin-left: 25rem;
 }
 
+.hero-section {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-left-part,
+.hero-right-part {
+    width: 50%;
+}
+
+.hero-right-part img {
+    float: right;
+    margin-right: 10%;
+}
+
+.hero-heading h2 {
+    font-size: 65rem;
+    font-weight: 900;
+}
+
+.hero-heading h1 {
+    font-size: 120rem;
+    line-height: 75rem;
+    font-weight: 900;
+}
+
+.hero-text p {
+    font-size: 16rem;
+    margin: 55rem 0;
+    font-weight: 500;
+}
+
+.main-btn {
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.2rem;
+    font-size: 14rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    opacity: 0.8;
+}
