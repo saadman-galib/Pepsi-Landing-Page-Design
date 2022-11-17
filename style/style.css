@@ -134,8 +134,12 @@ body {
 }
 
 .social-icons {
-    position: absolute;
-    top: 50%;
+    /* position: absolute; */
+    position: fixed ;
+    /* top: 50%; */
+    /* height: 100vh; */
+    /* margin: auto; */
+    top: calc(50% - 100rem);
     right: 0;
     z-index: 3;
     display: flex;
@@ -157,7 +161,7 @@ body {
     align-items: center;
     border-radius: 8px;
     transition-property: color, background, background-clip;
-    position: sticky;
+    
 }
 .social-icons i:nth-child(3) {
     position: relative;

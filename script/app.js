@@ -21,7 +21,6 @@ function getIndex(j) {
 }
 
 function changeImg(num) {
-    console.log(num);
     switch (num) {
         case 0:
             heroImg.src = "./images/pepsi001.png";
