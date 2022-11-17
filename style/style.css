@@ -13,8 +13,9 @@ html {
 body {
     background-color: #0260bf;
     font-family: Poppins, sans-serif;
-    overflow: hidden;
-    transition: 1.2s;
+    /* overflow: hidden; */
+    transition: 0.5s;
+    position: relative;
 }
 
 .navbar {
@@ -75,7 +76,6 @@ body {
 .hero-right-part img {
     float: right;
     margin-right: 10%;
-    height: 600px;
 }
 
 .hero-heading h2 {
@@ -118,7 +118,7 @@ body {
 
 .footer-img-container {
     width: max-content;
-    margin: 15rem auto;
+    margin: 55rem auto;
 }
 
 .footer img {
@@ -131,4 +131,74 @@ body {
 
 .footer img:hover {
     transform: translateY(-25rem);
+}
+
+.social-icons {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons i {
+    color: #fff;
+    font-size: 35rem;
+    margin: 12rem 25rem;
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: none;
+    width: 45rem;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    transition-property: color, background, background-clip;
+    position: sticky;
+}
+.social-icons i:nth-child(3) {
+    position: relative;
+}
+.social-icons i:nth-child(3)::after {
+    content: "";
+    background-color: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45rem;
+    height: 45rem;
+    border-radius: 8px;
+    z-index: -3;
+    transition: 0.5s;
+    transition-property: color, background, background-clip;
+}
+.social-icons i:nth-child(3):hover::after {
+    background-color: #fff;
+}
+
+.social-icons i:hover {
+    background-color: #fff;
+}
+
+.social-icons i:nth-child(1):hover {
+    color: #3b5998;
+}
+.social-icons i:nth-child(2):hover {
+    color: #00acee;
+}
+.social-icons i:nth-child(3):hover {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
