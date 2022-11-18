@@ -152,7 +152,7 @@ body {
     margin: 12rem 25rem;
     cursor: pointer;
     transition: 0.5s;
-    background-color: none;
+    background-color: #0260bf;
     width: 45rem;
     height: 45rem;
     display: flex;
@@ -295,8 +295,7 @@ body {
 
     .hero-section {
         flex-direction: column;
-        wid
-        th: 90%;
+        width: 90%;
     }
     .hero-left-part,
     .hero-right-part {
@@ -307,10 +306,5 @@ body {
     .hero-right-part img {
         float: none;
         margin: 35rem auto;
-    }
-
-    .social-icons i{
-        background-color: #0260bf;
-
     }
 }
