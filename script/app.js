@@ -3,6 +3,7 @@ var heroImg = document.querySelector(".hero-right-part img");
 var footerImg = document.querySelectorAll(".footer-img-container img");
 var navIcon = document.querySelector(".nav-icon");
 var navbarItems = document.querySelector(".navbar-right-part");
+var socialIcons = document.querySelectorAll(".social-icons i");
 
 footerImg.forEach((e) => {
     e.addEventListener("click", (i) => {
@@ -27,18 +28,27 @@ function changeImg(num) {
         case 0:
             heroImg.src = "./images/pepsi001.png";
             body.style.backgroundColor = "#0260BF";
+            changeSocialIconsBG("#0260BF");
             break;
         case 1:
             heroImg.src = "./images/pepsi002.png";
             body.style.backgroundColor = "#E9422F";
+            changeSocialIconsBG("#E9422F");
             break;
         case 2:
             heroImg.src = "./images/pepsi003.png";
             body.style.backgroundColor = "#1E1E1E";
+            changeSocialIconsBG("#1E1E1E");
             break;
         default:
             console.log("img not found");
     }
+}
+
+function changeSocialIconsBG(iconColor) {
+    socialIcons.forEach((a) => {
+        a.style.backgroundColor = iconColor;
+    });
 }
 
 navIcon.addEventListener("click", () => {
