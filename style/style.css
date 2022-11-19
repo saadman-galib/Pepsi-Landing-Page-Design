@@ -241,6 +241,7 @@ body {
         width: 100%;
         transition: 0.5s;
         z-index: 5;
+
     }
     .navbar-right-part ul {
         flex-direction: column;
@@ -252,6 +253,7 @@ body {
         width: 125%;
         background-color: #0260bf;
         display: flex;
+       
     }
 
     .navbar-right-part ul li a {
