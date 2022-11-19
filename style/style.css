@@ -77,6 +77,9 @@ body {
 .hero-right-part img {
     float: right;
     margin-right: 10%;
+    box-shadow: 4px 4px 12px -4px rgba(0,0,0,0.88);
+-webkit-box-shadow: 4px 4px 12px -4px rgba(0,0,0,0.88);
+-moz-box-shadow: 4px 4px 12px -4px rgba(0,0,0,0.88);
 }
 
 .hero-heading h2 {
