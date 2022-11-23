@@ -30,6 +30,7 @@ body {
 
 .navbar-right-part {
     margin-left: auto;
+    
 }
 
 .navbar-right-part ul {
@@ -39,6 +40,7 @@ body {
 
 .navbar-right-part ul li {
     list-style: none;
+    transition: 0.5s
 }
 
 .navbar-right-part ul li a {
@@ -155,7 +157,7 @@ body {
     margin: 12rem 25rem;
     cursor: pointer;
     transition: 0.5s;
-    background-color: #0260bf;
+    background-color: none;
     width: 45rem;
     height: 45rem;
     display: flex;
@@ -167,26 +169,27 @@ body {
 .social-icons i:nth-child(3) {
     position: relative;
 }
-.social-icons i:nth-child(3)::after {
+
+.social-icons i span{
     content: "";
-    background-color: none;
+    /* background-color: #0260bf; */
     position: absolute;
     top: 0;
     right: 0;
-    width: 45rem;
-    height: 45rem;
+    width: 44.9rem;
+    height: 44.9rem;
     border-radius: 8px;
     z-index: -3;
     transition: 0.5s;
     transition-property: color, background, background-clip;
 }
-.social-icons i:nth-child(3):hover::after {
+/* .social-icons i:hover > span{
     background-color: #fff;
-}
+} */
 
-.social-icons i:hover {
+/* .social-icons i:hover {
     background-color: #fff;
-}
+} */
 
 .social-icons i:nth-child(1):hover {
     color: #3b5998;

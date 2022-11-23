@@ -27,8 +27,48 @@ navIcon.addEventListener("click", () => {
 });
 
 function changeSocialIconsBG(iconColor) {
-    socialIcons.forEach((a) => {
-        a.style.backgroundColor = iconColor;
+    // document.querySelector(".social-icons i span").style.backgroundColor =
+    //     iconColor;
+
+    // socialIcons.forEach((a) => {
+    //     a.style.backgroundColor = iconColor;
+    //     // console.log(a)
+    // });
+
+    // socialIcons.forEach((a) => {
+    // socialIcons[0].addEventListener("mouseenter", () => {
+    //     a.style.backgroundColor = "#fff";
+    // });
+    // socialIcons[0].addEventListener("mouseout", () => {
+    //     a.style.backgroundColor = iconColor;
+    // });
+    // a.style.backgroundColor = iconColor;
+    // });
+    socialIcons.item(0).style.backgroundColor = iconColor;
+    socialIcons.item(1).style.backgroundColor = iconColor;
+    socialIcons.item(2).children.item(0).style.backgroundColor = iconColor;
+
+    socialIcons.item(0).addEventListener("mouseenter", () => {
+        socialIcons.item(0).style.backgroundColor = "#fff";
+    });
+    socialIcons.item(0).addEventListener("mouseout", (e) => {
+        e.target.style.backgroundColor = iconColor;
+    });
+
+    socialIcons.item(1).addEventListener("mouseenter", () => {
+        socialIcons.item(1).style.backgroundColor = "#fff";
+    });
+    socialIcons.item(1).addEventListener("mouseout", () => {
+        socialIcons.item(1).style.backgroundColor = iconColor;
+    });
+
+    socialIcons.item(2).addEventListener("mouseenter", () => {
+        document.querySelector(".social-icons i span").style.backgroundColor =
+            iconColor = "#fff";
+    });
+    socialIcons.item(2).addEventListener("mouseout", () => {
+        document.querySelector(".social-icons i span").style.backgroundColor =
+            iconColor;
     });
 }
 
@@ -37,3 +77,12 @@ function changeNavLists(listColor) {
         b.style.backgroundColor = listColor;
     });
 }
+try {
+    socialIcons.item(2).children.item(0).style.backgroundColor = "#0260BF";
+} catch (err) {
+    console.log(err);
+} finally {
+    console.log(socialIcons.item(2).children.item(0));
+}
+
+changeSocialIconsBG("0260BF");
